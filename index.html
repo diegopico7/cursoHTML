@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso HTML por Diego Pico </title>
+  <style>
+    h1 {
+      color: red;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -21,6 +27,7 @@
     <li><a href="index.html#linea-bloque"> Etiquetas en línea y en bloque</a></li>
     <li><a href="index.html#listas"> Listas</a></li>
     <li><a href="index.html#links"> Links</a></li>
+    <li><a href="index.html#enlaces-especiales">Enlaces especiales</a></li>
     <li><a href="index.html#tablas"> Tablas</a></li>
     <li><a href="index.html#audio-video">Audio y Video</a></li>
     <li><a href="index.html#formularios">Formularios</a></li>
@@ -126,7 +133,19 @@
   <a href="https://www.google.com.ar" target="_blank">google</a>
   <a href="index.html#temario"><img src="./imagenes/manito.png" alt="" width="50px" height="auto"></a>
   <br>
+  <h2 id="enlaces-especiales">Enlaces a protocolos especiales</h2>
+  <p>Los enlaces a protocoles especiales son para mail y telefono y whatsapp, para enviar a WhatsApp se pone el numero
+    si queremos agregar un texto automático agregamos &text=y aqui va el texto que vamos a mandar</p>
+  <a href="mailto:dgpicasso@hotmail.com">Enlace a correo electrónico</a>
+  <br><br>
+  <a href="tel:3813368111">Telefono</a>
+  <br> <br>
+  <a href="https://api.whatsapp.com/send?phone=381325421454&text=Hola">Enlace hacia WhatsApp</a>
+  <br><br>
+  <a href="index.html#temario"><img src="./imagenes/manito.png" alt="" width="50px" height="auto"></a>
+  <br>
   <hr>
+
   <h2 id="tablas">Tablas</h2>
   <table>
     <tr>
@@ -344,6 +363,34 @@
   <p>Crear un formulario de registro de usuarios</p>
   <p>que contenga nombre, apellido, telefono, email, y un formulario con opciones de cursos de informatica, un campo
     para dejar comentarios y para finalizar que tenga un boton enviar y resetear informacion</p>
+  <form>
+    <label for="nombre1">Nombre</label>
+    <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre1">
+    <br>
+    <label for="apellido1">Apellido</label>
+    <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellido1">
+    <br>
+    <label for="telefono1">Telefono</label>
+    <input type="tel" name="telefono1" id="telefono1" placeholder="Ingrese su numero de telefono" required>
+    <br>
+    <label for="mail">Email</label>
+    <input type="mail" name="email" id="email" required>
+    <br>
+    <label for="reparacion">Reparación de PC</label>
+    <input type="radio" name="reparacion">
+    <label for="programacion">Programación</label>
+    <input type="radio" name="programacion">
+    <label for="desarrollo">Desarrollo web</label>
+    <input type="radio" name="desarrollo">
+    <br><br>
+    <textarea name="" id="" cols="30" rows="10" placeholder="dejar su comentario"></textarea>
+    <br>
+    <input type="submit">
+    <input type="reset">
+
+
+  </form>
+
 
 
 
